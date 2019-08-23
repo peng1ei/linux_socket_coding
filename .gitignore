@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+
+# dir
+src/server/.idea
+src/server/cmake-build-debug
+src/server/cmake-build-release
+src/client/.idea
+src/client/cmake-build-debug
+src/client/cmake-build-release
+
