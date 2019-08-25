@@ -15,7 +15,7 @@
 namespace day01 {
 
     // 服务器端
-    int run(int argc, const char* argv[]) {
+    int run(int argc, char* argv[]) {
         std::cout << "day01::run(argc, argv)" << std::endl;
 
         // 创建监听的套接字
@@ -84,7 +84,6 @@ namespace day01 {
         }
 
         close(lfd);
-
         return 0;
     }
 

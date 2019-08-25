@@ -6,7 +6,7 @@
 #define SERVER_TCP_SERVER_H
 
 namespace day01 {
-    int run(int argc, const char* argv[]);
+    int run(int argc, char* argv[]);
 }
 
 #endif //SERVER_TCP_SERVER_H
