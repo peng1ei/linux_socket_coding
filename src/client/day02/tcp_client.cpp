@@ -15,13 +15,12 @@
 
 namespace day02 {
     int run(int argc, const char* argv[]) {
-//        if (argc < 2) {
-//            std::cout << "eg: ./a.out port" << std::endl;
-//            exit(1);
-//        }
-//
-//        int port = atoi(argv[1]);
-int port = 8888;
+        if (argc < 2) {
+            std::cout << "eg: ./a.out server_port" << std::endl;
+            exit(1);
+        }
+
+        int port = atoi(argv[1]);
 
         // 创建套接字
         int fd = socket(AF_INET, SOCK_STREAM, 0);
@@ -57,9 +56,7 @@ int port = 8888;
 
             // 等待接收数据
             int len = read(fd, buf, sizeof(buf));
-            std::cout << "a" << std::endl;
             if (len == -1) {
-                perror("read error");
                 perror("read error");
                 exit(1);
             } else if (len == 0) {

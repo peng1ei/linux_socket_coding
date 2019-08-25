@@ -1,6 +1,10 @@
 #ifndef __WRAP_IO_H_
 #define __WRAP_IO_H_
 
+#include <unistd.h>
+#include <sys/socket.h>
+#include <arpa/inet.h>
+
 namespace warp_io {
 	void perr_exit(const char *s);
 	int Accept(int fd, struct sockaddr *sa, socklen_t *salenptr);
